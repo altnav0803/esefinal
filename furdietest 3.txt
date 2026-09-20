@@ -1,0 +1,30 @@
+Here are topic-agnostic templates. Fill in the four placeholders and paste.
+
+**Placeholders**
+- `[DOMAIN]`: the subject area (e.g. "crop", "credit card", "heart disease")
+- `[TASK]`: what you're predicting or classifying (e.g. "yield prediction", "fraud detection")
+- `[DATASET]`: the exact dataset name, once you've chosen one
+- `[ALGO]`: model names, like `"random forest" OR xgboost OR svm`
+
+| Goal | Google Scholar | Scopus (Advanced Search) |
+|---|---|---|
+| **1. Papers on your dataset** | `"[DATASET]" machine learning` | `TITLE-ABS-KEY("[DATASET]" AND "machine learning")` |
+| **2. Domain + task** | `"[DOMAIN]" "[TASK]" machine learning` | `TITLE-ABS-KEY("[DOMAIN]" AND "[TASK]" AND "machine learning")` |
+| **3. Task + algorithms** | `"[TASK]" ([ALGO])` | `TITLE-ABS-KEY("[TASK]" AND ([ALGO]))` |
+| **4. Flexible phrasing** | `[DOMAIN] [TASK] using machine learning` | `TITLE-ABS-KEY([DOMAIN] W/5 [TASK])` |
+| **5. Synonyms for the task** | `"[TASK]" OR "[SYNONYM 1]" OR "[SYNONYM 2]"` | `TITLE-ABS-KEY("[TASK]" OR "[SYNONYM 1]" OR "[SYNONYM 2]")` |
+| **6. Final filtered version** | Use query 2 or 3, then set **Since 2022** in the sidebar. Optionally add `filetype:pdf` | `TITLE-ABS-KEY("[DOMAIN]" AND "[TASK]" AND "machine learning") AND PUBYEAR > 2021 AND DOCTYPE(ar) AND OPENACCESS(1)` |
+
+**Order to run them**
+1. Start with query 1 if you already have a dataset, because it finds papers that used it directly.
+2. If it returns fewer than 3 usable papers, run 2 or 3 to find papers on the same task with similar data.
+3. If results are thin, use 5 to widen the wording. Papers say "prediction," "forecasting," or "estimation" for the same thing.
+4. Use 6 last to narrow to recent, open-access papers.
+
+**Rules that apply to both**
+- Put multi-word phrases in quotes, or the engines match the words separately.
+- `OR` must be uppercase in both.
+- If a query returns hundreds of results, add one more keyword. If it returns almost nothing, remove the quotes or drop one term.
+- In Scopus, `W/5` means within 5 words and `predict*` matches predict, prediction, and predicting.
+
+Since the topic is unknown until tomorrow, save this table and the placeholder list somewhere you can copy from during the exam.
