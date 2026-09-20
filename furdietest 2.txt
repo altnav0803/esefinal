@@ -1,8 +1,0 @@
-Partly, but not in the way you're picturing. Searching for "the best" is the trap, because if 4 people paste the same topic into an LLM, they'll probably all get the same top Kaggle dataset, the same papers, and the same "Random Forest vs XGBoost" project. The best-looking option is what everyone finds. So don't aim for a better search, aim for a different and more defensible project.
-
-Cheap ways to stand out
-
-Pick a less obvious angle. Ask the AI for 3 framings and skip the most generic one. For rice, most people will do yield prediction, so water requirement or a specific stress factor might set you apart. It still has to be feasible in about an hour.
-Pick a sharper gap. "We tried more models" is what everyone will write. A gap like "the papers used a single train-test split with no cross-validation, and none explained feature importance" is specific, justified, and quick to fix.
-Show more rigor than the others. Cross-validation with mean ± std instead of one accuracy number, the same metrics as the papers, a fair comparison table, and a short limitations paragraph. Most students skip these, and they cost little time.
-Be able to explain everything. If grading involves a viva, that's where you separate from people who just pasted AI output.
