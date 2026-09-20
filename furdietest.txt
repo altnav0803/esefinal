@@ -1,0 +1,127 @@
+Sure. For your original problem statement, follow this exact order:
+
+1. **Refine the problem statement**
+   Convert “Do people behave differently when observed?” into a measurable research question.
+
+2. **Find 3–4 research papers**
+   Pick papers about observation effects, Hawthorne effect, watching-eyes effect, or similar behavioural changes.
+
+3. **Compare the papers**
+   Note for each paper:
+
+   * What behaviour they studied
+   * How observation was measured
+   * Dataset used
+   * Method used
+   * Main result
+   * Limitation
+
+4. **Choose one main paper**
+   Prefer one that provides its **original dataset publicly**.
+
+5. **Download the existing dataset**
+   Use only data supplied by the paper/authors.
+   Do not create synthetic data.
+
+6. **Understand the dataset**
+   Identify:
+
+   * Rows/observations
+   * Features
+   * Target variable
+   * Categorical columns
+   * Numerical columns
+   * Missing values
+
+7. **Define your ML problem**
+   Example:
+
+   > Predict whether a person changes/does a behaviour based on observation-related conditions.
+
+8. **Find your unique angle**
+   Make your work different from the paper. For example:
+
+   * Original paper uses statistical analysis
+   * You use ML prediction
+   * Compare models **with vs without observation features**
+
+9. **Load dataset into Google Colab**
+
+10. **Preprocess the dataset**
+
+    * Remove invalid rows
+    * Handle missing values
+    * Encode categorical variables
+    * Define `X` and `y`
+    * Train/test split
+    * Use stratification if classes are imbalanced
+
+11. **Perform basic EDA**
+    Create useful graphs such as:
+
+    * Target distribution
+    * Behaviour when observed vs not observed
+    * Behaviour vs number of nearby people
+    * Important contextual factors
+
+12. **Create a baseline model**
+    Use something simple like:
+
+    * Logistic Regression
+
+13. **Create your main ML model**
+    Use:
+
+    * Random Forest
+
+14. **Train both models**
+
+15. **Evaluate them**
+    Measure:
+
+    * Accuracy
+    * Precision
+    * Recall
+    * F1-score
+    * ROC-AUC
+    * Confusion matrix
+
+16. **Run your unique experiment**
+    Compare:
+
+    **Model A:** without observation features
+    **Model B:** with observation features
+
+    Then check whether observation information improves prediction.
+
+17. **Analyse feature importance**
+    Check whether variables like:
+
+    * being observed
+    * watching-eye cue
+    * number of people nearby
+
+    are important to the model.
+
+18. **Interpret the result**
+    Decide whether your dataset provides evidence that observation is associated with behavioural change.
+
+19. **Compare your result with the papers**
+    Say whether your findings:
+
+    * agree
+    * partially agree
+    * disagree
+
+    with previous studies.
+
+20. **Write the 2–3 page paper**
+    Structure:
+
+    `Abstract → Introduction → Literature Review → Dataset → Methodology → Results → Discussion → Limitations → Conclusion → References`
+
+21. **Rewrite the paper in your own wording**
+    Keep the results and citations accurate.
+
+22. **Optional frontend**
+    If time remains, build a small Gradio/Streamlit interface that takes observation/context variables and predicts the behaviour.
